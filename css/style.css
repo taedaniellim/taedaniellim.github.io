@@ -703,9 +703,9 @@ ABOUT ME
 
 .service-box {
   background-color: #18181c;
-  padding: 1.5rem 1.0rem;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+  padding: 1.5rem .5rem;
+  border-radius: 5rem;
+  margin-bottom: 1.2rem;
   color: #d8d8d8;
 }
 
