@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniel Lim — personal portfolio."
+    />
+    <meta
+      name="keywords"
+      content="Daniel Lim, Tae Young Lim, UH, portfolio, software engineer"
+    />
+    <meta name="theme-color" content="#070606" />
+    <meta property="og:title" content="Daniel Lim" />
+    <meta property="og:description" content="Daniel Lim — personal portfolio." />
+    <meta property="og:type" content="website" />
+
+    <title>Daniel Lim</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body id="top">
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="#top">Hello, Universe!</a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav aria-label="Primary">
+          <ul class="nav__list" id="primary-nav">
+            <li>
+              <a
+                class="nav__link is-active"
+                href="#top"
+                aria-current="location"
+                >Home</a
+              >
+            </li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="nav__link"
+                href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=vG5kyU0AAAAJ"
+                target="_blank"
+                rel="noopener"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link"
+                href="pdfs/TaeLimResume.pdf"
+                target="_blank"
+                rel="noopener"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <span class="hero__greeting">$ whoami</span>
+          <h1 class="hero__title" id="hero-title">Hi, I'm Daniel.</h1>
+          <p class="hero__subtitle">
+            <span class="visually-hidden"
+              >Welcome to Daniel's portfolio.</span
+            >
+            <span
+              data-typer="Nice to meet you!|Scroll down if you're bored :D|Welcome to my corner of the internet."
+              aria-hidden="true"
+            ></span
+            ><span class="hero__cursor" aria-hidden="true"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="surface">
+            <div class="about__grid">
+              <div>
+                <dl class="about__info">
+                  <div class="about__info-row">
+                    <dt>Name</dt>
+                    <dd>Daniel Lim</dd>
+                  </div>
+                  <div class="about__info-row">
+                    <dt>Email</dt>
+                    <dd>
+                      <a href="mailto:daniel.taeyounglim@gmail.com"
+                        >daniel.taeyounglim@gmail.com</a
+                      >
+                    </dd>
+                  </div>
+                  <div class="about__info-row">
+                    <dt>Location</dt>
+                    <dd>Houston, Texas</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div>
+                <h2 class="about__heading" id="about-title">About me</h2>
+
+                <div class="about__section">
+                  <h3 class="about__section-title">Education</h3>
+                  <ul class="about__list">
+                    <li>University of Houston — B.S. Computer Science &amp; Biochemistry, Minor in Mathematics</li>
+                  </ul>
+                </div>
+
+                <div class="about__section">
+                  <h3 class="about__section-title">Experience</h3>
+                  <ul class="about__list">
+                    <li style="--tag-color:#009EDC">SWE Intern @ Charles Schwab</li>
+                    <li style="--tag-color:#08a484">SWE Intern @ Baker Hughes</li>
+                    <li style="--tag-color:#C92A39">Peer Mentor @ UHCS</li>
+                    <li style="--tag-color:#a6d0d1">Computational Biology Intern @ Şen Lab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="projects-title">Personal Projects</h2>
+            <div class="section__rule"></div>
+          </header>
+
+          <div class="projects__grid">
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="https://github.com/taedaniellim/algotradingbot" target="_blank" rel="noopener">Algorithmic Trading Bot</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">model</dt><dd>RNN-LSTM</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">tools</dt><dd>Robinhood API, Selenium</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">lang</dt><dd>Python</dd></div>
+              </dl>
+            </article>
+
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="https://github.com/taedaniellim/mean" target="_blank" rel="noopener">E-Commerce Web App</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">frontend</dt><dd>HTML, CSS, Angular.js</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">backend</dt><dd>Express.js, Node.js</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">db</dt><dd>MongoDB</dd></div>
+              </dl>
+            </article>
+
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="https://github.com/taedaniellim/" target="_blank" rel="noopener">iOS Application</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">purpose</dt><dd>Food ordering</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">lang</dt><dd>Swift</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">db</dt><dd>Firebase</dd></div>
+              </dl>
+            </article>
+
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="https://github.com/taedaniellim/selenium/" target="_blank" rel="noopener">Church Reservation Bot</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">purpose</dt><dd>Web scraping</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">lang</dt><dd>Python</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">status</dt><dd>Completed 10/2020</dd></div>
+              </dl>
+            </article>
+
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.5L4 21h16l-6-11.5V2"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="pdfs/TaeLimSURF2020.pdf" target="_blank" rel="noopener">Biochemical Research</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">program</dt><dd>UH SURF 2020</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">topic</dt><dd>PCA &amp; eNMA of UspA 712</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">result</dt><dd>X-ray structure solved</dd></div>
+              </dl>
+            </article>
+
+            <article class="project">
+              <span class="project__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </span>
+              <h3 class="project__title">
+                <a href="https://github.com/kyluong/DS1Project" target="_blank" rel="noopener">Stroke Prediction</a>
+              </h3>
+              <dl class="project__meta">
+                <div class="project__meta-row"><dt class="project__meta-key">purpose</dt><dd>Detect possible strokes</dd></div>
+                <div class="project__meta-row"><dt class="project__meta-key">models</dt><dd>KNN, Logistic Regression, Random Forest</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="surface">
+            <header class="section__header">
+              <h2 class="section__title" id="contact-title">Get in touch</h2>
+              <div class="section__rule"></div>
+            </header>
+
+            <p class="contact__lead">
+              Hello, world! I'd love to connect — feel free to reach out by email.
+            </p>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Houston, Texas
+              </li>
+              <li class="contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:daniel.taeyounglim@gmail.com">daniel.taeyounglim@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span data-year></span> taedaniellim — all rights reserved.</p>
+      </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </a>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
